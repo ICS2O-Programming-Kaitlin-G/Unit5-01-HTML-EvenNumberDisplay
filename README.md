@@ -1,1 +1,2 @@
 # Unit5-01-HTML-EvenNumberDisplay
+[![GitHub's Super Linter](https://github.com/ICS2O-Programming-Kaitlin-G/Unit5-01-HTML-EvenNumberDisplay/actions/workflows/main.yml/badge.svg)](https://github.com/ICS2O-Programming-Kaitlin-G/Unit5-01-HTML-EvenNumberDisplay/actions)
