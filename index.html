@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- ICS2O-Unit5-01-EvenNumberDisplay -->
+<html lang="en-ca">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="This program will list all numbers from the minimum number the user enters to the maximum number the user enters. This is possible through the use of a WHILE loop. ">
+    <meta name="keywords" content="immaculata, ics2o">
+    <meta name="author" content="Katie G">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css"> 
+    
+    <!-- For the Favicon on this page -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav/favicon-16x16.png">
+    <link rel="manifest" href="./fav/site.webmanifest">
+    
+    <!-- Google's MDL -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-light_blue.min.css" /> 
+    <title>Numbers! Lists!!</title>
+
+    <!-- Javascript script file search lookup command thing. -->
+    <script src="./js/script.js"></script>
+  </head>
+  <body>
+    <!-- Google's MDL -->
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <div class = "mdl-layout mdl-js-layout--fixed-header">
+    
+    <!-- Container for web page content -->
+    <main class = "mdl-layout__content" style = "padding-left:10px">
+
+      <!-- Header, more specifically the largest header possible, primarily for visual structural aesthetic. -->
+      <center>
+        <h1>Numbers! Lists!!</h1>
+        <br>
+
+        <!-- some basic text explaining the function of this website and how to use it -->
+        <p>This website is quite simple, but still incredibly gorgeous: enter your minimum and maximum numbers, and the program will count from the min to the max in a nice, neat order :)</p>
+
+        <!-- textboxes that will collect the min and max numbers -->
+        <form action="javascript:numberCountClicked()">
+          <label for="minimum">Minimum Number</label>
+          <input type="number" name="minimum" id="minimum" step="1" placeholder="Min...">
+          <br>
+          <br>
+          <label for="maximum">Maximum Number</label>
+          <input type="number" name="maximum" id="maximum" step="1" placeholder="Max...">
+          <br>
+          <br>
+
+          <!-- mdl button that will start the process of this function -->
+          <button onclick="numberCountClicked()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+            Start The Count
+          </button>
+        </form>
+
+        <!-- div element that will display the results -->
+        <br>
+        <div id="counted-numbers"></div>
+      </center>
+    </main>
+    </div>
+  </body>
+</html>
